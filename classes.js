@@ -66,13 +66,6 @@ var eject=function(){
       return temp
 }
 // 3. start: The start method is responsible for actually toasting the toast -- we can achieve this using the built-in setTimeout function that accepts two parameters: a function and a time (number) in milliseconds (e.g. 1000 represents one second) -- setTimeout will then invoke that function once after the time has passed. setTimeout also returns a number that can be passed to clearTimeout to cancel the invocation (it works almost identically to setInterval, but only executes its function argument once instead of repeatedly).
-var start=function(){
-     var refer=this
-     refer.stop=setTimeout(function(){
-          refer.time = refer.time + 1
-          refer.toast=toast+'(toasted)'
-          console.log('Ding!' + refer.time)
-     },1000)
-}
+
 
 
